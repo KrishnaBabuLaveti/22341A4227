@@ -5,7 +5,6 @@ const cors = require("cors");
 const shortid = require("shortid");
 const Url = require("./Models/url_schema.js");
 
-// Load environment variables from .env file
 dotenv.config({ path: __dirname + "/.env" });
 
 const app = express();
@@ -21,7 +20,6 @@ mongoose
   .then(() => console.log("Successfully connected to MongoDB"))
   .catch((err) => console.error("Database connection error:", err));
 
-// Endpoint to create a new short URL
 app.post("/create-short-url", async (req, res) => {
   const { originalUrl, expiryMinutes, customCode } = req.body;
 
