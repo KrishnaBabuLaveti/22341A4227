@@ -1,0 +1,23 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+Backend/.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Sensitive files
+*.pem
+*.key
+*.crt
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Misc
+.env.*
